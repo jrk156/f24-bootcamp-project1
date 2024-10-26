@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+}
+
+
+/* 
+GEORGETOWN COLOR SCHEME
+primary colors
+Georgetown Blue:    #041E42
+Georgetown Gray:    #63666A 
+
+secondary colors
+pantone 280 blue:       #012169
+pantone 293 blue:       #003DA5
+cool gray 4:            #BBBCBC
+pantone 7527 cream:     #D6D2C4
+
+tertiary colors
+pantone 306 light blue:     #00B5E2 
+pantone 202 maroon red:     #862633 
+pantone 369 green:          #5FA343
+pantone 199 light red:      #D50032
+pantone 1205 beige:         #F8E08E
+*/
+
+.content_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #862633;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #862633;
+}
+.header h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* chatGPT prompt: add stylized formatting to the header */
+.header h1:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 4px;
+    background: #631721;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.topbg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10%;
+}
+.top {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    /* flex-direction: column; */
+    width: 100%;
+    color: black;
+    /* background-color: #BBBCBC; */
+    background: linear-gradient(180deg, #862633,#BBBCBC);
+}
+.top img {
+    display:flex;
+    align-items: center;
+    width: 30%;
+    margin-top: 5%;
+    border-radius: 5px;
+
+}
+
+.topcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px;
+    margin-left: 2.5%;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #a5a5a5; */
+    background: linear-gradient(180deg, #BBBCBC,#63666A);
+    background-size: cover, 10px 10px;
+    border: 2px solid #631721;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    
+}
+
+.topcontainer h2 {
+    margin-bottom: 5%;
+    margin-left: 5%;
+    color: #862633;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 10px 0 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0, 0.2);
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color:#862633;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 5px 0;
+    width: auto;
+}
+
+.button:hover {
+    background-color: #b03e4d;
+    color: white;
+    transform: scale(1.05);
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
+    object-fit: contain;
+    display: inline-block;
+}
+
+/* button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 25%;
+    margin: 0;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    background-color: #862633 ;
+    color: white;
+} */
+
+
+
+.bio_section {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    height: 70%;
+    background-color: #BBBCBC;
+    border-radius: 10px;
+    margin-bottom: 15%;
+    box-shadow: #63666A 0 0 45px 10px;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.bio h2 {
+    font-size: calc(2vmin + 2vmax);
+    padding-bottom: 1%;
+}
+.bio p {
+    font-size: calc(1vmin + 1.5vmax);
+    padding-bottom: 2%;
+}
+.bio p2 {
+    padding-bottom: 2%;
+}
+.bio p3 {
+    padding-bottom: 2%;
+}
+
